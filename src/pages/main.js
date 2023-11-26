@@ -24,7 +24,7 @@ function addRow() {
 function updateTable () { 
     if (contacts.includes(inputName.value) || numbers.includes(inputNumber.value)) {
         alert('O contato/número já está salvo.')
-    } else if (inputNumber.value.length <= 8 || inputNumber.value.length >= 11 ) {
+    } else if (inputNumber.value.length < 8 || inputNumber.value.length > 11 ) {
         alert('O tamanho do número é inválido.')
     } else {    
         let tableBody = document.getElementById('table-body');
